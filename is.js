@@ -146,6 +146,13 @@ var is = function is(x) {
                     return !isNaN(basedNumber) && basedNumber == THIRTEEN;
                 }
             }
+        },
+        somewhat: {
+            thirteen: function() {
+                return thirteenStrings.some(function(thirteen) {
+                    return x.indexOf(thirteen) >= 0;
+                });
+            }
         }
     }
 };
